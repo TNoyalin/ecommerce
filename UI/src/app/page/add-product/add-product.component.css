@@ -1,0 +1,15 @@
+.main{
+    margin:50px auto;
+    width: 60%;
+    border:2px solid black;
+}
+form{
+    padding: 5% 5%;
+}
+.row{
+    margin-bottom: 20px;
+}
+.home{
+    margin-bottom: 80px;
+    margin-left: 20px;
+}

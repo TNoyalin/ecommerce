@@ -1,0 +1,61 @@
+<app-nav-bar></app-nav-bar>
+<div class="main">
+    <div class="row">
+        <div class="card" style="width: 60rem;">
+            <div class="card-body">
+                <div class="text-center" style="background-color: #f0f0f0; padding: 10px;width:100%">
+                    <h4>{{ productDetail.name }}</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ 'data:image/png;base64,' + productDetail.imageByte }}" class="card-img-top"
+                            alt="product image" style="width: 80%; height: 250px; border: 1px solid #000;" />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6 class="card-title"><b>Price</b></h6>
+                            </div>
+                            <div class="col-md-8">
+                                <h6 class="card-title">: LKR {{ productDetail.price }}</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6 class="card-title"><b>Category</b></h6>
+                            </div>
+                            <div class="col-md-8">
+                                <h6 class="card-title">: {{ productDetail.category }}</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6 class="card-title"><b>Description</b></h6>
+                            </div>
+                            <div class="col-md-8">
+                                <h6 class="card-title">: {{ productDetail.description }}</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6 class="card-title"><b>How to use</b></h6>
+                            </div>
+                            <div class="col-md-8">
+                                <h6 class="card-title">: {{ productDetail.directions                                }}</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6 class="card-title"><b>Available Stock</b></h6>
+                            </div>
+                            <div class="col-md-8">
+                                <h6 class="card-title">: {{ productDetail.inStock }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

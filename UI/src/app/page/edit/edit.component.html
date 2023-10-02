@@ -1,0 +1,64 @@
+<app-nav-bar></app-nav-bar>
+<div class="main" style="width:50%;border: 1px solid grey ;background-color: rgb(201, 231, 231);">
+    <form class="form-login" [formGroup]="editProduct" (ngSubmit)="submit()" enctype="multipart/form-data">
+        <h3 class="form-signin-heading" style="text-align: center; margin-top: 0px;">EDIT PRODUCT</h3>
+        <a href="#" id="flipToRecover" class="flipLink">
+            <div id="triangle-topright"></div>
+        </a>
+        <div class="row">
+            <label for="exampleFormControlInput1" class="form-label"><b>Name</b></label>
+            <input formControlName="name" type="text" class="form-control" required autofocus
+                style="margin-left: 10px;margin-right: 10px;">
+        </div>
+        <div class="row">
+            <label for="exampleFormControlInput1" class="form-label"><b>Price</b></label>
+            <input formControlName="price" type="number" class="form-control" required
+                style="margin-left: 10px;margin-right: 50px;">
+        </div>
+        <div class="row">
+            <label for="exampleFormControlInput1" class="form-label"><b>Category</b></label>
+            <select formControlName="category" class="form-select" required
+                style="margin-left: 10px;margin-right: 50px;">
+                <option value="" disabled selected>Select a category</option>
+                <option value="face">Face</option>
+                <option value="lip">Lip</option>
+                <option value="lipstick">lipstick</option>
+                <option value="skin">Skin</option>
+                <option value="hand">Hand</option>
+                <option value="body">Body</option>
+                <option value="hair">Hair</option>
+                <option value="facewash">Facewash</option>
+                <option value="moisturiser">Moisturiser</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="exampleFormControlInput1" class="form-label"><b>Description</b></label>
+            <input formControlName="description" type="text" class="form-control" required autofocus maxlength="1000"
+                style="margin-left: 10px;">
+        </div>
+        <div class="row">
+            <label for="exampleFormControlInput1" class="form-label"><b>Usage</b></label>
+            <input formControlName="usage" type="text" class="form-control" required autofocus
+                style="margin-left: 10px;">
+        </div>
+        <div class="row">
+            <label for="exampleFormControlInput1" class="form-label"><b>Image</b></label><br>
+            <input type="file" formControlName="image" accept="image/png, image/jpeg" id="image"
+                (change)="onFileSelected($event)" />
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-lg btn-primary" type="submit" style="width:100px">UPDATE</button>
+            </div>
+
+            <div class="col-md-6 text-end">
+                <button class="btn btn-lg btn-primary" type="reset" style="width:100px">RESET</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+<div class="home">
+    <button class="btn btn-lg btn-primary" type="home" routerLink="/home" style="width:100px">HOME</button>
+</div>

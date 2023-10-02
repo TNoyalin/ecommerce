@@ -1,0 +1,18 @@
+.paginationDiv {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-body {
+    background-color: rgb(201, 231, 231);
+}
